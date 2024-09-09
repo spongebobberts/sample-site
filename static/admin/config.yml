@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: <your-username>/<repository-name> # Your GitHub username and repo name
+  branch: main
+
+media_folder: "uploads" # Folder for uploaded media files
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
